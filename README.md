@@ -51,7 +51,7 @@
   You get 5 points every time a block sucessfully fall.
   Every time you clear lines you get a specific amount of points which depends on the number of lines cleared in one move.
 
-  If you just cleared a line a combo starts, it ends as soon as you drop a piece without clearing any line.
+  When you clear a line, a combo starts, it ends as soon as you drop a piece without clearing any line.
   The amount of points won by line clear is multiplied by the current combo length
   
   | Lines Cleared        | 1     | 2     | 3     | 4     |
