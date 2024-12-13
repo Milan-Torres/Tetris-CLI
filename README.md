@@ -26,9 +26,15 @@
  - The default speed is at about 1.18 pixel/s (= 0.85s between each fall step)
  - When you provide a specific speed x, the time between each fall step is set as 5/x (so the speed is of x/5 pixel/s)
  - The time between each fall step is capped at 1 second
- - For that reason, passing 5 or below as an argument froze the game (which is useful for debugging)  
+ - For that reason, passing 5 or below as an argument froze the game (which is useful for debugging)
+
+### Adaptability
+ The UI size is fully responsive and adapts to the window size in REAL TIME while playing
 
 ## Gameplay  
+ ### Generalities
+  - The board is 10 pixels wide and 20 pixels tall
+  - Those properties can be easily changed in the game source code as they are just 2 constants, they might be added as a parameter in the future
  ### Basic movement
   - You can press \<A\> to make your current piece go left and \<D\> to make it go right
   - You can press \<S\> to fast drop and \<W\> to instant drop
