@@ -4,6 +4,9 @@
  https://github.com/user-attachments/assets/2a82e0bc-705a-4330-8def-ff470b19d39d
 
 
+## Installation
+ Go in the [Release](https://github.com/Milan-Torres/Tetris-CLI/releases) section and download the latest binary. Afterwards, open a terminal and run the program
+
 ## Features
  ### Stash
   You can stash dropping pieces, they are then shown in the "Stashed" section. For more information see [Stashing](#stashing).
