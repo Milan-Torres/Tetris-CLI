@@ -5,7 +5,7 @@
 
 
 ## Installation
- Go in the [Release](https://github.com/Milan-Torres/Tetris-CLI/releases) section and download the latest binary. Afterwards, open a terminal and run the program
+ Go to the [Releases](https://github.com/Milan-Torres/Tetris-CLI/releases) section and download the latest binary. Afterwards, open a terminal and run the program
 
 ## Features
  ### Stash
