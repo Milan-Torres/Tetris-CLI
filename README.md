@@ -1,5 +1,5 @@
 # Tetris-CLI
- A Tetris game running in the command line made using ncurses
+ A Tetris game running in the command line, made using ncurses
 
  https://github.com/user-attachments/assets/2a82e0bc-705a-4330-8def-ff470b19d39d
 
