@@ -22,8 +22,29 @@ jobs:
     
     - name: Build Project
       run: make
+        
+    - name: Generate version number
+      id: generate_version
+      run: echo "VERSION=$(date +'v%Y.%m.%d')" >> $GITHUB_ENV
 
-    - uses: actions/upload-artifact@v4
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        name: tetris-cli
-        path: tetris-cli
+        tag_name: ${{ env.VERSION }}
+        release_name: Release ${{ env.VERSION }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: upload-release-asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./tetris-cli
+        asset_name: tetris-cli
+        asset_content_type: application/octet-stream
