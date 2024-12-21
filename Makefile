@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -g -lncurses
+CFLAGS = -Wall -g
 
 SRC_DIR = Source
 OBJ_DIR = Objects
@@ -14,11 +14,11 @@ CLEAN = $(OBJS) $(TARGET)
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-	$(CC) $(CFLAGS) -o $@ $^
+	$(CC) $(CFLAGS) -o $@ $^ -lncurses
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@mkdir -p $(OBJ_DIR)
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@ -lncurses
 
 clean:
 	rm -f $(CLEAN)
