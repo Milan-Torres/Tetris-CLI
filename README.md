@@ -7,6 +7,10 @@
 ## Installation
  Go to the [Releases](https://github.com/Milan-Torres/Tetris-CLI/releases) section and download the latest binary. Afterwards, open a terminal and run the program
 
+ > [!WARNING]  
+> Don't forget to make the binary executable on your machine !
+> You can do so by running `chmod +x tetris-cli`
+
 ## Features
  ### Stash
   You can stash dropping pieces, they are then shown in the "Stashed" section. For more information see [Stashing](#stashing).
